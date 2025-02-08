@@ -2,24 +2,31 @@
 <testng-results ignored="0" total="3" passed="3" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2025-02-08T10:27:31 IST" name="Default suite" finished-at="2025-02-08T10:27:31 IST" duration-ms="122">
+  <suite started-at="2025-02-08T14:59:56 IST" name="Suite" finished-at="2025-02-08T14:59:56 IST" duration-ms="154">
     <groups>
+      <group name="critcal Regression">
+        <method signature="TC_002.pqr()[pri:0, instance:Com_Test.TC_002@5656be13]" name="pqr" class="Com_Test.TC_002"/>
+        <method signature="TC__003.m2()[pri:0, instance:Com_Test.TC__003@4c583ecf]" name="m2" class="Com_Test.TC__003"/>
+        <method signature="TC__003.m3()[pri:0, instance:Com_Test.TC__003@4c583ecf]" name="m3" class="Com_Test.TC__003"/>
+      </group> <!-- critcal Regression -->
     </groups>
-    <test started-at="2025-02-08T10:27:31 IST" name="Default test" finished-at="2025-02-08T10:27:31 IST" duration-ms="122">
-      <class name="Com_Test.TC_004">
-        <test-method signature="pqr()[pri:0, instance:Com_Test.TC_004@6302bbb1]" started-at="2025-02-08T10:27:31 IST" name="pqr" finished-at="2025-02-08T10:27:31 IST" duration-ms="20" status="PASS">
+    <test started-at="2025-02-08T14:59:56 IST" name="Test" finished-at="2025-02-08T14:59:56 IST" duration-ms="154">
+      <class name="Com_Test.TC__003">
+        <test-method signature="m2()[pri:0, instance:Com_Test.TC__003@4c583ecf]" started-at="2025-02-08T14:59:56 IST" name="m2" finished-at="2025-02-08T14:59:56 IST" duration-ms="29" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- m2 -->
+        <test-method signature="m3()[pri:0, instance:Com_Test.TC__003@4c583ecf]" started-at="2025-02-08T14:59:56 IST" name="m3" finished-at="2025-02-08T14:59:56 IST" duration-ms="2" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- m3 -->
+      </class> <!-- Com_Test.TC__003 -->
+      <class name="Com_Test.TC_002">
+        <test-method signature="pqr()[pri:0, instance:Com_Test.TC_002@5656be13]" started-at="2025-02-08T14:59:56 IST" name="pqr" finished-at="2025-02-08T14:59:56 IST" duration-ms="4" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- pqr -->
-        <test-method signature="qwe()[pri:1, instance:Com_Test.TC_004@6302bbb1]" started-at="2025-02-08T10:27:31 IST" name="qwe" finished-at="2025-02-08T10:27:31 IST" duration-ms="4" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- qwe -->
-        <test-method signature="Abc()[pri:2, instance:Com_Test.TC_004@6302bbb1]" started-at="2025-02-08T10:27:31 IST" name="Abc" finished-at="2025-02-08T10:27:31 IST" duration-ms="5" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- Abc -->
-      </class> <!-- Com_Test.TC_004 -->
-    </test> <!-- Default test -->
-  </suite> <!-- Default suite -->
+      </class> <!-- Com_Test.TC_002 -->
+    </test> <!-- Test -->
+  </suite> <!-- Suite -->
 </testng-results>
