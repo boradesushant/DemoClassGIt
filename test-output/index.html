@@ -25,7 +25,7 @@
       <span class="top-banner-title-font">Test results</span>
       <button id="button" class="button">Switch Retro Theme</button> <!-- button -->
       <br/>
-      <span class="top-banner-font-1">1 suite</span>
+      <span class="top-banner-font-1">1 suite, 2 failed tests</span>
     </div> <!-- top-banner-root -->
     <div class="navigator-root">
       <div class="navigator-suite-header">
@@ -39,7 +39,7 @@
         <div class="rounded-window">
           <div class="suite-header light-rounded-window-top">
             <a href="#" panel-name="suite-Suite" class="navigator-link">
-              <span class="suite-name border-passed">Suite</span>
+              <span class="suite-name border-failed">Suite</span>
             </a> <!-- navigator-link -->
           </div> <!-- suite-header light-rounded-window-top -->
           <div class="navigator-suite-content">
@@ -49,23 +49,18 @@
             <div class="suite-section-content">
               <ul>
                 <li>
-<<<<<<< HEAD
                   <a href="#" panel-name="test-xml-Suite" class="navigator-link ">
-                    <span>C:\Users\Sai\eclipse-workspace\DemoClassGIt\testngregressin.xml</span>
-=======
-                  <a href="#" panel-name="test-xml-Default_suite" class="navigator-link ">
-                    <span>C:\Users\Sai\AppData\Local\Temp\testng-eclipse--434228550\testng-customsuite.xml</span>
->>>>>>> 3972a89ff0b52fb4e91bdf18630312cf1982828e
+                    <span>C:\Users\Sai\eclipse-workspace\DemoClassGIt\testngCross.xml</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
                   <a href="#" panel-name="testlist-Suite" class="navigator-link ">
-                    <span class="test-stats">1 test</span>
+                    <span class="test-stats">2 tests</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
                   <a href="#" panel-name="group-Suite" class="navigator-link ">
-                    <span>1 group</span>
+                    <span>0 groups</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
@@ -97,7 +92,26 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">3 methods,   3 passed</span>
+                    <span class="method-stats">6 methods, 2 failed,   4 passed</span>
+                  </li>
+                  <li>
+                    <span class="method-list-title failed">Failed methods</span>
+                    <span class="show-or-hide-methods failed">
+                      <a href="#" panel-name="suite-Suite" class="hide-methods failed suite-Suite"> (hide)</a> <!-- hide-methods failed suite-Suite -->
+                      <a href="#" panel-name="suite-Suite" class="show-methods failed suite-Suite"> (show)</a> <!-- show-methods failed suite-Suite -->
+                    </span>
+                    <div class="method-list-content failed suite-Suite">
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="Com_Test.Test_Com_a6" class="method navigator-link" hash-for-method="verify_Element">verify_Element</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="Com_Test.Test_Com_a6" class="method navigator-link" hash-for-method="verify_Element">verify_Element</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content failed suite-Suite -->
                   </li>
                   <li>
                     <span class="method-list-title passed">Passed methods</span>
@@ -108,17 +122,22 @@
                     <div class="method-list-content passed suite-Suite">
                       <span>
                         <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Suite" title="Com_Test.TC__003" class="method navigator-link" hash-for-method="m2">m2</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-Suite" title="Com_Test.Test_Com_a6" class="method navigator-link" hash-for-method="Setup(Edge)">Setup(Edge)</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
                         <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Suite" title="Com_Test.TC__003" class="method navigator-link" hash-for-method="m3">m3</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-Suite" title="Com_Test.Test_Com_a6" class="method navigator-link" hash-for-method="Setup(Chrome)">Setup(Chrome)</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
                         <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Suite" title="Com_Test.TC_002" class="method navigator-link" hash-for-method="pqr">pqr</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-Suite" title="Com_Test.Test_Com_a6" class="method navigator-link" hash-for-method="TearDown">TearDown</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="Com_Test.Test_Com_a6" class="method navigator-link" hash-for-method="TearDown">TearDown</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                     </div> <!-- method-list-content passed suite-Suite -->
@@ -133,39 +152,98 @@
     <div class="wrapper">
       <div class="main-panel-root">
         <div panel-name="suite-Suite" class="panel Suite">
-          <div class="suite-Suite-class-passed">
+          <div class="suite-Suite-class-failed">
             <div class="main-panel-header rounded-window-top">
-              <img src="passed.png"/>
-              <span class="class-name">Com_Test.TC__003</span>
+              <img src="failed.png"/>
+              <span class="class-name">Com_Test.Test_Com_a6</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="m2">
-                  </a> <!-- m2 -->
-                  <span class="method-name">m2</span>
+                  <a name="verify_Element">
+                  </a> <!-- verify_Element -->
+                  <span class="method-name">verify_Element</span>
+                  <div class="stack-trace">org.openqa.selenium.NoSuchSessionException: Session ID is null. Using WebDriver after calling quit()?
+Build info: version: &apos;4.27.0&apos;, revision: &apos;d6e718d134&apos;
+System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;19&apos;
+Driver info: org.openqa.selenium.edge.EdgeDriver
+Command: [null, findElement {value=email, using=name}]
+Capabilities {acceptInsecureCerts: false, browserName: MicrosoftEdge, browserVersion: 132.0.2957.140, fedcm:accounts: true, ms:edgeOptions: {debuggerAddress: localhost:54506}, msedge: {msedgedriverVersion: 132.0.2957.140 (a81e27b375d..., userDataDir: C:\Users\Sai\AppData\Local\...}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:54506/devtoo..., se:cdpVersion: 132.0.2957.140, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:151)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:66)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:368)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:362)
+	at Com_Test.Test_Com_a6.verify_Element(Test_Com_a6.java:13)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 25 stack frames
+</div> <!-- stack-trace -->
                 </div> <!-- method-content -->
               </div> <!-- method -->
               <div class="method">
                 <div class="method-content">
-                  <a name="m3">
-                  </a> <!-- m3 -->
-                  <span class="method-name">m3</span>
+                  <a name="verify_Element">
+                  </a> <!-- verify_Element -->
+                  <span class="method-name">verify_Element</span>
+                  <div class="stack-trace">org.openqa.selenium.NoSuchSessionException: Session ID is null. Using WebDriver after calling quit()?
+Build info: version: &apos;4.27.0&apos;, revision: &apos;d6e718d134&apos;
+System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;19&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [null, findElement {value=email, using=name}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 131.0.6778.86, chrome: {chromedriverVersion: 131.0.6778.264 (2d05e315153..., userDataDir: C:\Users\Sai\AppData\Local\...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:54538}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:54538/devtoo..., se:cdpVersion: 131.0.6778.86, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:151)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:66)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:368)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:362)
+	at Com_Test.Test_Com_a6.verify_Element(Test_Com_a6.java:13)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 25 stack frames
+</div> <!-- stack-trace -->
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-Suite-class-passed -->
+          </div> <!-- suite-Suite-class-failed -->
           <div class="suite-Suite-class-passed">
             <div class="main-panel-header rounded-window-top">
               <img src="passed.png"/>
-              <span class="class-name">Com_Test.TC_002</span>
+              <span class="class-name">Com_Test.Test_Com_a6</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="pqr">
-                  </a> <!-- pqr -->
-                  <span class="method-name">pqr</span>
+                  <a name="Setup(Edge)">
+                  </a> <!-- Setup(Edge) -->
+                  <span class="method-name">Setup</span>
+                  <span class="parameters">(Edge)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="Setup(Chrome)">
+                  </a> <!-- Setup(Chrome) -->
+                  <span class="method-name">Setup</span>
+                  <span class="parameters">(Chrome)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="TearDown">
+                  </a> <!-- TearDown -->
+                  <span class="method-name">TearDown</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="TearDown">
+                  </a> <!-- TearDown -->
+                  <span class="method-name">TearDown</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
@@ -173,28 +251,25 @@
         </div> <!-- panel Suite -->
         <div panel-name="test-xml-Suite" class="panel">
           <div class="main-panel-header rounded-window-top">
-<<<<<<< HEAD
-            <span class="header-content">C:\Users\Sai\eclipse-workspace\DemoClassGIt\testngregressin.xml</span>
-=======
-            <span class="header-content">C:\Users\Sai\AppData\Local\Temp\testng-eclipse--434228550\testng-customsuite.xml</span>
->>>>>>> 3972a89ff0b52fb4e91bdf18630312cf1982828e
+            <span class="header-content">C:\Users\Sai\eclipse-workspace\DemoClassGIt\testngCross.xml</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <pre>
 &lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
 &lt;!DOCTYPE suite SYSTEM &quot;https://testng.org/testng-1.0.dtd&quot;&gt;
 &lt;suite name=&quot;Suite&quot; guice-stage=&quot;DEVELOPMENT&quot;&gt;
-  &lt;test thread-count=&quot;5&quot; name=&quot;Test&quot;&gt;
-    &lt;groups&gt;
-      &lt;run&gt;
-        &lt;include name=&quot;critcal Regression&quot;/&gt;
-      &lt;/run&gt;
-    &lt;/groups&gt;
+  &lt;test thread-count=&quot;5&quot; name=&quot;TestEdge&quot;&gt;
+    &lt;parameter name=&quot;BrowserName&quot; value=&quot;Edge&quot;/&gt;
     &lt;classes&gt;
-      &lt;class name=&quot;Com_Test.TC__003&quot;/&gt;
-      &lt;class name=&quot;Com_Test.TC_002&quot;/&gt;
+      &lt;class name=&quot;Com_Test.Test_Com_a6&quot;/&gt;
     &lt;/classes&gt;
-  &lt;/test&gt; &lt;!-- Test --&gt;
+  &lt;/test&gt; &lt;!-- TestEdge --&gt;
+  &lt;test thread-count=&quot;5&quot; name=&quot;TestChrome&quot;&gt;
+    &lt;parameter name=&quot;BrowserName&quot; value=&quot;Chrome&quot;/&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;Com_Test.Test_Com_a6&quot;/&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- TestChrome --&gt;
 &lt;/suite&gt; &lt;!-- Suite --&gt;
             </pre>
           </div> <!-- main-panel-content rounded-window-bottom -->
@@ -206,7 +281,10 @@
           <div class="main-panel-content rounded-window-bottom">
             <ul>
               <li>
-                <span class="test-name">Test (2 classes)</span>
+                <span class="test-name">TestEdge (1 class)</span>
+              </li>
+              <li>
+                <span class="test-name">TestChrome (1 class)</span>
               </li>
             </ul>
           </div> <!-- main-panel-content rounded-window-bottom -->
@@ -216,22 +294,6 @@
             <span class="header-content">Groups for Suite</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
-            <div class="test-group">
-              <span class="test-group-name">critcal Regression</span>
-              <br/>
-              <div class="method-in-group">
-                <span class="method-in-group-name">m2</span>
-                <br/>
-              </div> <!-- method-in-group -->
-              <div class="method-in-group">
-                <span class="method-in-group-name">m3</span>
-                <br/>
-              </div> <!-- method-in-group -->
-              <div class="method-in-group">
-                <span class="method-in-group-name">pqr</span>
-                <br/>
-              </div> <!-- method-in-group -->
-            </div> <!-- test-group -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
         <div panel-name="times-Suite" class="panel">
@@ -248,47 +310,38 @@ data.addColumn('number', 'Number');
 data.addColumn('string', 'Method');
 data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
-data.addRows(3);
+data.addRows(6);
 data.setCell(0, 0, 0)
-<<<<<<< HEAD
-data.setCell(0, 1, 'm2')
-data.setCell(0, 2, 'Com_Test.TC__003')
-data.setCell(0, 3, 29);
+data.setCell(0, 1, 'Setup')
+data.setCell(0, 2, 'Com_Test.Test_Com_a6')
+data.setCell(0, 3, 12874);
 data.setCell(1, 0, 1)
-data.setCell(1, 1, 'pqr')
-data.setCell(1, 2, 'Com_Test.TC_002')
-data.setCell(1, 3, 4);
+data.setCell(1, 1, 'Setup')
+data.setCell(1, 2, 'Com_Test.Test_Com_a6')
+data.setCell(1, 3, 12119);
 data.setCell(2, 0, 2)
-data.setCell(2, 1, 'm3')
-data.setCell(2, 2, 'Com_Test.TC__003')
-data.setCell(2, 3, 2);
+data.setCell(2, 1, 'TearDown')
+data.setCell(2, 2, 'Com_Test.Test_Com_a6')
+data.setCell(2, 3, 1532);
+data.setCell(3, 0, 3)
+data.setCell(3, 1, 'TearDown')
+data.setCell(3, 2, 'Com_Test.Test_Com_a6')
+data.setCell(3, 3, 632);
+data.setCell(4, 0, 4)
+data.setCell(4, 1, 'verify_Element')
+data.setCell(4, 2, 'Com_Test.Test_Com_a6')
+data.setCell(4, 3, 12);
+data.setCell(5, 0, 5)
+data.setCell(5, 1, 'verify_Element')
+data.setCell(5, 2, 'Com_Test.Test_Com_a6')
+data.setCell(5, 3, 4);
 window.suiteTableData['Suite']= { tableData: data, tableDiv: 'times-div-Suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 35 ms</span>
+              <span class="suite-total-time">Total running time: 27 seconds</span>
               <div id="times-div-Suite">
               </div> <!-- times-div-Suite -->
-=======
-data.setCell(0, 1, 'pqr')
-data.setCell(0, 2, 'Com_Test.TC_004')
-data.setCell(0, 3, 18);
-data.setCell(1, 0, 1)
-data.setCell(1, 1, 'Abc')
-data.setCell(1, 2, 'Com_Test.TC_004')
-data.setCell(1, 3, 4);
-data.setCell(2, 0, 2)
-data.setCell(2, 1, 'qwe')
-data.setCell(2, 2, 'Com_Test.TC_004')
-data.setCell(2, 3, 3);
-window.suiteTableData['Default_suite']= { tableData: data, tableDiv: 'times-div-Default_suite'}
-return data;
-}
-              </script>
-              <span class="suite-total-time">Total running time: 25 ms</span>
-              <div id="times-div-Default_suite">
-              </div> <!-- times-div-Default_suite -->
->>>>>>> 3972a89ff0b52fb4e91bdf18630312cf1982828e
             </div> <!-- times-div -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
@@ -301,25 +354,9 @@ return data;
         </div> <!-- panel -->
         <div panel-name="ignored-methods-Suite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">3 ignored methods</span>
+            <span class="header-content">0 ignored methods</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
-            <div class="ignored-class-div">
-              <span class="ignored-class-name">Com_Test.TC__003</span>
-              <div class="ignored-methods-div">
-                <span class="ignored-method-name">m1</span>
-                <br/>
-              </div> <!-- ignored-methods-div -->
-            </div> <!-- ignored-class-div -->
-            <div class="ignored-class-div">
-              <span class="ignored-class-name">Com_Test.TC_002</span>
-              <div class="ignored-methods-div">
-                <span class="ignored-method-name">xyz</span>
-                <br/>
-                <span class="ignored-method-name">wer</span>
-                <br/>
-              </div> <!-- ignored-methods-div -->
-            </div> <!-- ignored-class-div -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
         <div panel-name="chronological-Suite" class="panel">
@@ -328,31 +365,34 @@ return data;
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <div class="chronological-class">
-              <div class="chronological-class-name">Com_Test.TC__003</div> <!-- chronological-class-name -->
+              <div class="chronological-class-name">Com_Test.Test_Com_a6</div> <!-- chronological-class-name -->
               <div class="test-method">
-                <span class="method-name">m2</span>
+                <span class="method-name">Setup(Edge)</span>
                 <span class="method-start">0 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
-<<<<<<< HEAD
-                <span class="method-name">m3</span>
-                <span class="method-start">47 ms</span>
-=======
-                <span class="method-name">qwe</span>
-                <span class="method-start">28 ms</span>
->>>>>>> 3972a89ff0b52fb4e91bdf18630312cf1982828e
+                <span class="method-name">TearDown</span>
+                <span class="method-start">12129 ms</span>
               </div> <!-- test-method -->
-            </div> <!-- chronological-class -->
-            <div class="chronological-class">
-              <div class="chronological-class-name">Com_Test.TC_002</div> <!-- chronological-class-name -->
               <div class="test-method">
-<<<<<<< HEAD
-                <span class="method-name">pqr</span>
-                <span class="method-start">60 ms</span>
-=======
-                <span class="method-name">Abc</span>
-                <span class="method-start">37 ms</span>
->>>>>>> 3972a89ff0b52fb4e91bdf18630312cf1982828e
+                <img src="failed.png">
+                </img>
+                <span class="method-name">verify_Element</span>
+                <span class="method-start">13665 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">Setup(Chrome)</span>
+                <span class="method-start">13745 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">TearDown</span>
+                <span class="method-start">26626 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">verify_Element</span>
+                <span class="method-start">27261 ms</span>
               </div> <!-- test-method -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
