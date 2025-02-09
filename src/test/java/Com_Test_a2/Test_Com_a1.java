@@ -1,30 +1,51 @@
 package Com_Test_a2;
 
-<<<<<<< HEAD
-public class Test_Com_a1 {
-
-	public static void main(String[] args) {
-		// TODO Auto-generated method stub
-
-=======
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 
 import io.github.bonigarcia.wdm.WebDriverManager;
 
-public class Test_Com_a1 {
+ public class Test_Com_a1 {
 
 	public static void main(String[] args) {
 
 		  
 		WebDriverManager.chromedriver().setup();
+		
 		ChromeDriver driver=new ChromeDriver();
+		
 		driver.get("https://ui.vision/demo/webtest/frames/");
+		
 		driver.manage().window().maximize();
 		
-		// frame
+		
+		WebElement frame3=driver.findElement(By.xpath("//frame[@src='frame_3.html']"));
+		
+		driver.switchTo().frame(frame3);
+		
+		driver.findElement(By.xpath("//input[@name='mytext3']")).sendKeys("Test 3");
+		
+		WebElement innerframe=driver.findElement(By.xpath("(//iframe)[1]"));
+		
+			
+		driver.switchTo().frame(innerframe);
+		
+		driver.findElement(By.xpath("(//div[@class='AB7Lab Id5V1'])[2]")).click();
+		
+		driver.switchTo().parentFrame();
+		
+		driver.switchTo().defaultContent();
+		
+		WebElement framr4=driver.findElement(By.xpath("//frame[@src='frame_4.html']"));
+		
+		driver.switchTo().frame(framr4);
 		
 		
->>>>>>> 3972a89ff0b52fb4e91bdf18630312cf1982828e
+		driver.findElement(By.xpath("//input[@name='mytext4']")).sendKeys("Test 4");
+		
+		
+		
 	}
 
 }
